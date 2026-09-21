@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Énergie">
+  <!-- Le carré de la charte, et le tracé « zap » de Lucide (ISC), posé sur la
+       même grille de 24 et au même trait de 2 que l'icône du site frère. Un
+       fichier, et non un emoji : l'éclair d'un système à l'autre n'a ni la
+       même forme ni la même taille, et se brouille en petit. -->
+  <rect width="32" height="32" rx="7" fill="#0b3d3a"/>
+  <g transform="translate(4 4)" fill="none" stroke="#e9c53d" stroke-width="2"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+# Le site est statique : rien ne se compile, donc rien n'échoue bruyamment.
+# Ces deux scripts sont le seul filet — ils rattrapent une page oubliée après
+# modification d'un corps, un lien vers une ancre renommée, une balise laissée
+# ouverte, une police absente.
+name: Vérifier le site
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Les pages livrées sont-elles à jour ?
+        run: python3 scripts/construire.py --verifier
+      - name: Les liens mènent-ils quelque part ?
+        run: python3 scripts/verifier.py
