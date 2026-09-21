@@ -93,7 +93,8 @@ GABARIT = """<!doctype html>
   Le site ne dépose aucun cookie, ne mesure aucune audience et ne charge ni
   police, ni script, ni image venus d'un tiers : personne n'apprend que vous
   l'avez lu.</p>
-  <p class="retour-site">Un site du <a href="{site_parent}">Parti libéral français</a>.</p>
+  <p class="retour-site">Un site du <a href="{site_parent}">Parti libéral français</a>.
+  <a href="mentions.html">Mentions légales</a>.</p>
 </footer>
 
 </body>

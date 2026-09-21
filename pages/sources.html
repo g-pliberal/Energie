@@ -16,7 +16,7 @@
   l'adresse d'un rapport change tous les deux ans, celle de l'institution qui le
   publie beaucoup moins. Et tout chiffre que nous calculons nous-mêmes est
   accompagné de ses hypothèses, <a href="#hypotheses">plus bas sur cette
-  page</a>.</p>
+  page</a>, et de <a href="#tableur">la table qui le contient</a>.</p>
 </div>
 
 <h2>Production et mix électrique</h2>
@@ -215,6 +215,45 @@ varient en outre, pour les carburants, selon la teneur en biocarburants.</p>
   conservateur : il ne compte pas les effets de comportement, qui réduisent
   l'assiette, ni les recettes nouvelles sur les usages aujourd'hui exonérés, qui
   vont au dividende et non au budget.</p>
+</div>
+
+<h2 id="tableur">Les données, en tableur</h2>
+
+<p>Un tableau dans une page web se recopie mal et se recalcule encore plus mal.
+Chaque figure et chaque calcul de ce site s'appuie donc sur un fichier
+<code>.csv</code> versionné dans le dépôt, avec sa source dans une colonne.
+Téléchargez-les, ouvrez-les, refaites les additions :
+<strong class="cle-texte">c'est fait pour</strong>.</p>
+
+<div class="defilant">
+  <table>
+    <caption><span>Les tables derrière les figures et les calculs. Séparateur virgule, décimale au point, encodage UTF-8.</span></caption>
+    <thead><tr><th scope="col" class="long">Table</th><th scope="col" class="texte long">Ce qu'elle contient</th></tr></thead>
+    <tbody>
+      <tr><th scope="row" class="long"><a href="donnees/production-annuelle.csv">production-annuelle.csv</a></th><td class="texte long">Production, consommation, exportations, intensité carbone et heures de prix négatifs, 2022 à 2025.</td></tr>
+      <tr><th scope="row" class="long"><a href="donnees/mix-electrique.csv">mix-electrique.csv</a></th><td class="texte long">La production par filière — la figure de l'accueil.</td></tr>
+      <tr><th scope="row" class="long"><a href="donnees/intensite-carbone.csv">intensite-carbone.csv</a></th><td class="texte long">France, Allemagne, moyenne européenne, en émissions directes et en cycle de vie.</td></tr>
+      <tr><th scope="row" class="long"><a href="donnees/facture-electricite.csv">facture-electricite.csv</a></th><td class="texte long">Les trois tiers de la facture.</td></tr>
+      <tr><th scope="row" class="long"><a href="donnees/prelevements-electricite.csv">prelevements-electricite.csv</a></th><td class="texte long">Accise, majoration ZNI, contribution tarifaire, TVA, et leur historique depuis 2021.</td></tr>
+      <tr><th scope="row" class="long"><a href="donnees/emissions-secteurs.csv">emissions-secteurs.csv</a></th><td class="texte long">La répartition sectorielle des émissions françaises.</td></tr>
+      <tr><th scope="row" class="long"><a href="donnees/fiscalite-carbone.csv">fiscalite-carbone.csv</a></th><td class="texte long">Facteurs d'émission, accises, et le prix implicite du carbone qui en découle — les deux colonnes et leur quotient.</td></tr>
+      <tr><th scope="row" class="long"><a href="donnees/chiffrage-programme.csv">chiffrage-programme.csv</a></th><td class="texte long">Les 29 milliards, poste par poste.</td></tr>
+      <tr><th scope="row" class="long"><a href="donnees/profils-menages.csv">profils-menages.csv</a></th><td class="texte long">Les cas types, leurs hypothèses de consommation et leur solde.</td></tr>
+      <tr><th scope="row" class="long"><a href="donnees/nucleaire-couts.csv">nucleaire-couts.csv</a></th><td class="texte long">Flamanville, les EPR2, la dette d'EDF, Cigéo, le plafond de responsabilité.</td></tr>
+      <tr><th scope="row" class="long"><a href="donnees/soutien-renouvelables.csv">soutien-renouvelables.csv</a></th><td class="texte long">Les engagements de la Cour des comptes, les tarifs de la bulle, les objectifs européens.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="note">
+  <p><strong>Ces tables ne sont pas décoratives : le dépôt les contrôle.</strong>
+  À chaque modification du site, un script refait les additions — les filières
+  doivent faire le total de l'année, les parts doivent faire cent, les postes du
+  chiffrage doivent faire les vingt-neuf milliards, le prix implicite du carbone
+  doit être le quotient de ses deux colonnes, et le solde d'un ménage la
+  différence des deux précédentes. Si un chiffre dérive, la publication échoue.
+  C'est la seule façon que nous connaissions d'empêcher qu'une retouche de texte
+  fasse mentir un tableau.</p>
 </div>
 
 <h2>Ce que nous ne savons pas</h2>

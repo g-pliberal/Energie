@@ -1,0 +1,6 @@
+profil,annee_programme,effet_facture_eur,dividende_eur,solde_eur,hypotheses
+chauffage_electrique,1,-400,470,870,12000 kWh par an
+chauffage_gaz_sans_voiture,1,70,470,400,15000 kWh par an
+chauffage_gaz_avec_voiture,1,70,470,400,15000 kWh et 13000 km à 6.5 L/100 km
+chauffage_fioul_gros_rouleur,1,250,470,220,2000 L et 20000 km à 6.5 L/100 km
+chauffage_fioul_gros_rouleur,10,1660,900,-760,"mêmes consommations, carbone à 250 EUR/t"

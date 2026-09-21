@@ -1,0 +1,9 @@
+prelevement,valeur,unite,annee,source
+accise_electricite_menages,31,EUR/MWh,2026,"Code des impositions sur les biens et services — ordre de grandeur, révisé en cours d'année"
+dont_majoration_zni,5.66,EUR/MWh,2026,Bulletin officiel des finances publiques
+accise_electricite_menages,33.70,EUR/MWh,2025,Légifrance
+accise_electricite_menages,1,EUR/MWh,2022,Légifrance — bouclier tarifaire
+accise_electricite_menages,32,EUR/MWh,2021,"Légifrance — TICFE 22,5 plus taxes locales, ordre de grandeur"
+rendement_accise_electricite,8000,MEUR,2026,Projet de loi de finances pour 2026
+contribution_tarifaire_acheminement,15,pct_part_fixe_distribution,2026,Légifrance ; CNIEG
+tva,20,pct,2026,Code général des impôts

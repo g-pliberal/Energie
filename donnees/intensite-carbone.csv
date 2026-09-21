@@ -1,0 +1,6 @@
+zone,annee,g_co2_par_kwh,convention,source
+France,2025,19.6,emissions directes de la production,"RTE, Bilan électrique 2025"
+Europe,2025,178.0,emissions directes de la production,"RTE — UE, Suisse, Norvège, Royaume-Uni"
+France,2024,21.0,emissions directes de la production,RTE ; recoupé par Ember
+Allemagne,2024,363.0,emissions directes de la production,Ember / Agora Energiewende
+France,,57.5,analyse de cycle de vie,ADEME Base Empreinte / GIEC — ordre de grandeur 55 à 60

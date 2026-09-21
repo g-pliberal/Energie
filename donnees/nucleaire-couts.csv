@@ -1,0 +1,14 @@
+poste,valeur,unite,annee,source
+flamanville3_devis_initial,3.3,MdEUR,2006,EDF — à l'engagement du projet
+flamanville3_cout_edf,13.2,MdEUR,2015,EDF — euros 2015
+flamanville3_cout_complet,19.1,MdEUR,2020,Cour des comptes — frais financiers compris
+epr2_devis_1,51.7,MdEUR,2021,EDF — euros 2020
+epr2_devis_2,67.4,MdEUR,2023,EDF
+epr2_plafond,72.8,MdEUR,2025,"EDF — euros 2020, hors frais financiers"
+epr2_facture_complete,100,MdEUR,2025,"Cour des comptes — ordre de grandeur, financement compris"
+grand_carenage,50,MdEUR,,EDF / Cour des comptes — ordre de grandeur
+edf_dette_nette,54.3,MdEUR,2024,"EDF, résultats annuels"
+edf_dette_nette,51.5,MdEUR,2025,"EDF, résultats annuels"
+edf_rachat_flottant,9.7,MdEUR,2023,Agence des participations de l'État
+cigeo,25,MdEUR,2016,Arrêté ministériel — chiffre contesté
+responsabilite_civile_plafond,0.7,MdEUR,2022,Convention de Paris révisée — minimum appliqué par la France

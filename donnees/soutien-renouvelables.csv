@@ -1,0 +1,10 @@
+poste,valeur,unite,annee,source
+engagements_contrats_signes,121,MdEUR,2018,"Cour des comptes, Le soutien aux énergies renouvelables, mars 2018"
+dont_solaire_avant_2011,38.4,MdEUR,2018,Cour des comptes — pour environ 0.7 pct de la production
+charges_annuelles_avant_crise_min,5,MdEUR,2018,CRE — ordre de grandeur
+charges_annuelles_avant_crise_max,8,MdEUR,2021,CRE — ordre de grandeur
+tarif_achat_solaire_bulle,600,EUR/MWh,2010,"Arrêtés tarifaires, Légifrance — jusqu'à"
+objectif_2020_atteint,19,pct,2020,Eurostat
+objectif_2020_vise,23,pct,2020,Eurostat
+objectif_red3_union,42.5,pct,2030,Directive RED III
+investissements_reseau_rte,100,MdEUR,2040,"RTE, schéma décennal — ordre de grandeur, d'ici 2040"
