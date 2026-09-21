@@ -85,15 +85,8 @@ met à jour quand on revérifie réellement les chiffres de la page, et à ce
 moment-là seulement** : une date de vérification fausse est pire que pas de date.
 
 **Pour ajouter une page**, on dépose le corps dans `pages/`, et on ajoute
-l'onglet dans `NAVIGATION`, en haut de `scripts/construire.py`. Une page hors
-bandeau — les mentions légales, par exemple — porte `onglet: (aucun)` et se
-relie depuis le pied.
-
-**Pour modifier le directeur de la publication**, on change la constante
-`DIRECTEUR_PUBLICATION`, en haut de `scripts/construire.py`, et rien d'autre :
-`pages/mentions.html` la reprend par le jeton `{{directeur_publication}}`, et
-`verifier.py` échoue si un jeton atteint une page publiée. Une responsabilité
-juridique nominative ne se corrige pas dans trois fichiers.
+l'onglet dans `NAVIGATION`, en haut de `scripts/construire.py`. Une page qui ne
+doit pas figurer au bandeau porte `onglet: (aucun)`.
 
 **Pour modifier un chiffre affiché dans une figure ou un calcul**, on modifie
 d'abord la table de `donnees/`, puis la page. `verifier.py` refuse les deux si

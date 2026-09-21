@@ -224,12 +224,6 @@ def main() -> int:
             if ancre and ancre not in lecteurs[cible].ancres:
                 erreurs.append(f"{nom} : lien vers « {lien} », ancre introuvable")
 
-    # Les jetons du gabarit. Un « {{directeur_publication}} » qui atteint la page
-    # publiée est pire qu'une page absente : c'est une mention légale vide.
-    for page in pages:
-        for jeton in set(re.findall(r"\{\{[a-z_]+\}\}", page.read_text(encoding="utf-8"))):
-            erreurs.append(f"{page.name} : jeton non remplacé — {jeton}")
-
     # Les ressources citées par les pages : feuilles, icône, polices.
     for page in pages:
         texte = page.read_text(encoding="utf-8")

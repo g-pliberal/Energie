@@ -44,19 +44,6 @@ NAVIGATION: list[tuple[str, list[tuple[str, str]]]] = [
 ]
 
 NOM_DU_SITE = "Énergie — programme libéral"
-
-# Le directeur de la publication, exigé par la loi pour la confiance dans
-# l'économie numérique. Il n'apparaît qu'ici, et `pages/mentions.html` le
-# reprend par le jeton {{directeur_publication}} : une responsabilité juridique
-# nominative ne se corrige pas dans trois fichiers.
-#
-# Les sources publiques ne concordent pas complètement : le site du parti
-# présente Rudy Feildel comme son président, tandis que le répertoire des
-# entreprises déclare Quentin Laporte, secrétaire général, comme représentant.
-# Pour une association, le directeur de la publication est son représentant
-# légal au sens des statuts. C'est donc la ligne à vérifier auprès du parti —
-# et à corriger ici, une fois.
-DIRECTEUR_PUBLICATION = "Rudy Feildel, président"
 DEPOT = "https://github.com/g-pliberal/Energie"
 SITE_PARENT = "https://partiliberalfrancais.fr/"
 
@@ -106,8 +93,7 @@ GABARIT = """<!doctype html>
   Le site ne dépose aucun cookie, ne mesure aucune audience et ne charge ni
   police, ni script, ni image venus d'un tiers : personne n'apprend que vous
   l'avez lu.</p>
-  <p class="retour-site">Un site du <a href="{site_parent}">Parti libéral français</a>.
-  <a href="mentions.html">Mentions légales</a>.</p>
+  <p class="retour-site">Un site du <a href="{site_parent}">Parti libéral français</a>.</p>
 </footer>
 
 </body>
@@ -157,7 +143,6 @@ def lire(source: Path) -> tuple[dict[str, str], str]:
 
 def rendre(source: Path) -> str:
     meta, corps = lire(source)
-    corps = corps.replace("{{directeur_publication}}", DIRECTEUR_PUBLICATION)
     onglet = "" if meta["onglet"] == "(aucun)" else meta["onglet"]
     return GABARIT.format(
         titre=meta["titre"],
