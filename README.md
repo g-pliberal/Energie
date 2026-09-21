@@ -14,11 +14,11 @@ Il est destiné aux électeurs, pas aux spécialistes : huit pages, aucune
 | `index.html` | L'accueil : les quatre chiffres qui résument la situation, le mix électrique, et les six engagements. |
 | `constat.html` | Les deux France de l'énergie — l'électricité décarbonée, et les 58 % d'énergie finale encore fossile. Quinze ans de décisions publiques, année par année. |
 | `prix.html` | La facture décomposée : un tiers d'énergie, un tiers de réseau, un tiers de taxes — dont une qui finance les retraites des électriciens. |
-| `nucleaire.html` | Flamanville, les EPR2, la dette d'EDF, et la question que le débat français évite : qui prend le risque ? |
-| `renouvelables.html` | 121 Md€ d'engagements, dont 38,4 Md€ pour des contrats solaires qui produisaient 0,7 % du courant. Et ce qu'il faut leur reconnaître. |
-| `programme.html` | La proposition : prix du carbone unique, dividende intégral, fin des subventions de filière, 18 mois d'instruction opposables, capital nucléaire ouvert, facture à trois lignes. |
-| `objections.html` | Huit objections sérieuses, dont **deux auxquelles nous n'avons pas de réponse complète** — et qui sont signalées comme telles. |
-| `sources.html` | Chaque chiffre du site, avec sa valeur, son année, son éditeur, et la mention explicite de ce qui n'est qu'un ordre de grandeur. |
+| `nucleaire.html` | Flamanville, les EPR2 à 72,8 Md€, la dette d'EDF, la responsabilité civile plafonnée, et la question que le débat français évite : qui prend le risque ? |
+| `renouvelables.html` | 121 Md€ d'engagements, dont 38,4 Md€ pour des contrats solaires qui produisaient 0,7 % du courant. Ce qu'il faut leur reconnaître, et l'angle mort du débat : l'hydraulique. |
+| `programme.html` | La proposition : prix du carbone unique à 100 €/t puis 250, dividende intégral versé hors budget, fin des subventions de filière, 18 mois d'instruction opposables, nucléaire neuf financé par ses clients — **et le chiffrage : 29 Md€ à retrouver ailleurs**. |
+| `objections.html` | Onze objections sérieuses, dont **trois auxquelles nous n'avons pas de réponse complète** — et qui portent un badge. |
+| `sources.html` | Chaque chiffre du site, avec sa valeur, son année, son éditeur, la mention de ce qui n'est qu'un ordre de grandeur — et **les hypothèses de tous nos calculs**, pour qu'on puisse les refaire. |
 
 ## La règle que ce dépôt s'impose
 
@@ -32,8 +32,15 @@ le croie. Ici :
 3. **On lie l'éditeur, pas le fichier.** L'adresse d'un rapport change tous les
    deux ans ; celle de la Cour des comptes, non.
 4. **Les objections adverses sont publiées**, y compris celles qui portent. Le
-   dividende carbone canadien a été supprimé en 2025 : c'est écrit sur la page
-   des objections, avec ce que nous en tirons.
+   dividende carbone canadien a été supprimé en 2025 et le bonus autrichien la
+   même année : c'est écrit sur la page des objections, avec ce que nous en
+   tirons.
+5. **Ce que nous calculons nous-mêmes est séparé de ce que nous citons**, et ses
+   hypothèses sont publiées — facteurs d'émission, profils de ménages, chiffrage
+   budgétaire. Un calcul dont on ne donne pas les hypothèses est une opinion.
+6. **Ce que le programme coûte est chiffré dans le programme**, pas renvoyé à
+   plus tard : 29 Md€ de recettes publiques à retrouver, écrits en toutes
+   lettres.
 
 ## Comment c'est fait
 
@@ -63,9 +70,11 @@ python3 -m http.server 8000                # puis http://localhost:8000
 
 **Pour modifier un texte**, on édite `pages/<nom>.html` — c'est du HTML qu'un
 navigateur affiche tel quel pendant qu'on l'écrit — puis on relance
-`construire.py`. Les trois métadonnées en tête de fichier (`titre`,
-`description`, `onglet`) alimentent l'en-tête HTML et marquent l'onglet courant
-du bandeau.
+`construire.py`. Les quatre métadonnées en tête de fichier (`titre`,
+`description`, `onglet`, `verifie`) alimentent l'en-tête HTML, marquent l'onglet
+courant du bandeau, et datent les chiffres dans le pied de page. **`verifie` se
+met à jour quand on revérifie réellement les chiffres de la page, et à ce
+moment-là seulement** : une date de vérification fausse est pire que pas de date.
 
 **Pour ajouter une page**, on dépose le corps dans `pages/`, et on ajoute
 l'onglet dans `NAVIGATION`, en haut de `scripts/construire.py`.

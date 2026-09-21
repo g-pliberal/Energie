@@ -114,3 +114,7 @@ ol.jalons > li > .fait > span { display: block; margin-top: 0.3rem;
   ol.jalons > li { grid-template-columns: 1fr; }
   ol.jalons > li > .annee { font-size: 1.625rem; }
 }
+
+/* La date de vérification, dans le pied : elle doit être lisible sans peser —
+   c'est une garantie, pas un argument. */
+footer > p.verifie { font-size: 0.9375rem; opacity: 0.85; }

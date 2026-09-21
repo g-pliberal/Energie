@@ -1,19 +1,22 @@
 <!-- titre: Données et sources — Énergie, le programme libéral -->
-<!-- description: Chaque chiffre cité sur ce site, avec sa source, son millésime et son degré de fiabilité — y compris ceux qui ne sont que des ordres de grandeur. -->
+<!-- description: Chaque chiffre cité sur ce site, avec sa source, son millésime et son degré de fiabilité — et les hypothèses de tous nos calculs, pour qu'on puisse les refaire. -->
 <!-- onglet: sources.html -->
+<!-- verifie: septembre 2026 -->
 
 <div class="affiche">
   <p class="surtitre">Les références</p>
   <h1>Chaque chiffre, <span class="serif">sa source et son millésime</span></h1>
-  <p class="chapeau">Un site politique qui cite des nombres sans dire d'où ils viennent demande qu'on le croie. Voici l'inverse : la liste complète de ce que nous avançons, avec l'année, l'éditeur, et la mention explicite de ce qui n'est qu'un ordre de grandeur.</p>
+  <p class="chapeau">Un site politique qui cite des nombres sans dire d'où ils viennent demande qu'on le croie. Voici l'inverse : la liste complète de ce que nous avançons, avec l'année, l'éditeur, la mention explicite de ce qui n'est qu'un ordre de grandeur — et les hypothèses de chacun de nos calculs, pour que vous puissiez les refaire et nous contredire.</p>
 </div>
 
 <div class="note resume">
-  <p><strong>Trois règles.</strong> Un chiffre sans millésime ne vaut rien :
+  <p><strong>Quatre règles.</strong> Un chiffre sans millésime ne vaut rien :
   chacun porte son année. Un ordre de grandeur n'est pas une mesure : il est
-  signalé comme tel. Et nous lions l'<em>éditeur</em> plutôt qu'un fichier —
+  signalé comme tel. Nous lions l'<em>éditeur</em> plutôt qu'un fichier —
   l'adresse d'un rapport change tous les deux ans, celle de l'institution qui le
-  publie beaucoup moins.</p>
+  publie beaucoup moins. Et tout chiffre que nous calculons nous-mêmes est
+  accompagné de ses hypothèses, <a href="#hypotheses">plus bas sur cette
+  page</a>.</p>
 </div>
 
 <h2>Production et mix électrique</h2>
@@ -23,14 +26,15 @@
     <caption><span>Chiffres de production. Source principale : RTE, <em>Bilan électrique</em>, publication annuelle.</span></caption>
     <thead><tr><th scope="col" class="long">Ce que nous affirmons</th><th scope="col" class="nombre">Valeur</th><th scope="col" class="date">Année</th><th scope="col" class="texte long">Source</th></tr></thead>
     <tbody>
-      <tr><th scope="row" class="long">Production électrique totale</th><td class="nombre">536,5 TWh</td><td class="date">2024</td><td class="texte long">RTE, <em>Bilan électrique 2024</em></td></tr>
-      <tr><th scope="row" class="long"><span class="dont">dont nucléaire</span></th><td class="nombre">361,7 TWh — 67,4 %</td><td class="date">2024</td><td class="texte long">RTE</td></tr>
-      <tr><th scope="row" class="long"><span class="dont">dont hydraulique</span></th><td class="nombre">74,7 TWh — 13,9 %</td><td class="date">2024</td><td class="texte long">RTE</td></tr>
-      <tr><th scope="row" class="long"><span class="dont">dont éolien</span></th><td class="nombre">46,2 TWh — 8,6 %</td><td class="date">2024</td><td class="texte long">RTE</td></tr>
-      <tr><th scope="row" class="long"><span class="dont">dont solaire</span></th><td class="nombre">24,3 TWh — 4,5 %</td><td class="date">2024</td><td class="texte long">RTE</td></tr>
-      <tr><th scope="row" class="long">Solde exportateur net</th><td class="nombre">89 TWh</td><td class="date">2024</td><td class="texte long">RTE — record historique</td></tr>
+      <tr><th scope="row" class="long">Production électrique totale</th><td class="nombre">547,5 TWh</td><td class="date">2025</td><td class="texte long">RTE, <em>Bilan électrique 2025</em></td></tr>
+      <tr><th scope="row" class="long"><span class="dont">dont production bas carbone</span></th><td class="nombre">521,1 TWh — 95,2 %</td><td class="date">2025</td><td class="texte long">RTE — maximum historique</td></tr>
+      <tr><th scope="row" class="long"><span class="dont">dont nucléaire</span></th><td class="nombre">373 TWh — 68 %</td><td class="date">2025</td><td class="texte long">RTE</td></tr>
+      <tr><th scope="row" class="long">Solde exportateur net</th><td class="nombre">92,3 TWh</td><td class="date">2025</td><td class="texte long">RTE — record historique, après 89 TWh en 2024</td></tr>
+      <tr><th scope="row" class="long">Consommation intérieure</th><td class="nombre">451 TWh</td><td class="date">2025</td><td class="texte long">RTE — environ 6 % sous le niveau d'avant-crise</td></tr>
+      <tr><th scope="row" class="long">Détail du mix par filière (figure de l'accueil)</th><td class="nombre">536,5 TWh</td><td class="date">2024</td><td class="texte long">RTE, <em>Bilan électrique 2024</em> — nucléaire 361,7 ; hydraulique 74,7 ; éolien 46,2 ; solaire 24,3 ; fossile 20,2 ; bioénergies 9,4</td></tr>
       <tr><th scope="row" class="long">Production nucléaire au plus bas</th><td class="nombre">279 TWh</td><td class="date">2022</td><td class="texte long">RTE — plus bas niveau depuis 1988</td></tr>
-      <tr><th scope="row" class="long">Heures de prix négatifs</th><td class="nombre">&gt; 350 h</td><td class="date">2024</td><td class="texte long">RTE / EPEX Spot <span class="badge">Ordre de grandeur</span></td></tr>
+      <tr><th scope="row" class="long">Heures de prix négatifs</th><td class="nombre">513 h</td><td class="date">2025</td><td class="texte long">RTE / EPEX Spot — après 352 h en 2024</td></tr>
+      <tr><th scope="row" class="long">Réacteurs raccordés au réseau</th><td class="nombre">56, de 1977 à 1999</td><td class="date">—</td><td class="texte long">EDF / AIEA — une cinquantaine avant 1990 ; le 57ᵉ est Flamanville 3, en 2024</td></tr>
     </tbody>
   </table>
 </div>
@@ -42,9 +46,12 @@
     <caption><span>Intensité carbone et répartition sectorielle des émissions.</span></caption>
     <thead><tr><th scope="col" class="long">Ce que nous affirmons</th><th scope="col" class="nombre">Valeur</th><th scope="col" class="date">Année</th><th scope="col" class="texte long">Source</th></tr></thead>
     <tbody>
-      <tr><th scope="row" class="long">Intensité carbone de l'électricité française</th><td class="nombre">≈ 21 g CO₂/kWh</td><td class="date">2024</td><td class="texte long">RTE ; recoupé par Ember</td></tr>
+      <tr><th scope="row" class="long">Intensité carbone de l'électricité française</th><td class="nombre">19,6 g CO₂/kWh</td><td class="date">2025</td><td class="texte long">RTE — émissions directes de la production ; deuxième rang européen derrière la Norvège</td></tr>
+      <tr><th scope="row" class="long">Moyenne européenne, même convention</th><td class="nombre">178 g CO₂/kWh</td><td class="date">2025</td><td class="texte long">RTE — Union européenne, Suisse, Norvège et Royaume-Uni</td></tr>
+      <tr><th scope="row" class="long">La même, en analyse de cycle de vie</th><td class="nombre">≈ 55 à 60 g CO₂/kWh</td><td class="date">—</td><td class="texte long">ADEME, Base Empreinte ; GIEC pour les facteurs par filière <span class="badge">Ordre de grandeur</span></td></tr>
       <tr><th scope="row" class="long">Intensité carbone de l'électricité allemande</th><td class="nombre">≈ 363 g CO₂/kWh</td><td class="date">2024</td><td class="texte long">Ember / Agora Energiewende <span class="badge">Ordre de grandeur</span></td></tr>
       <tr><th scope="row" class="long">Émissions françaises de CO₂ fossile</th><td class="nombre">≈ 250 Mt</td><td class="date">2023-2024</td><td class="texte long">Citepa, inventaire national <span class="badge">Ordre de grandeur</span></td></tr>
+      <tr><th scope="row" class="long"><span class="dont">dont transport routier</span></th><td class="nombre">≈ 120 Mt</td><td class="date">2023</td><td class="texte long">Citepa <span class="badge">Ordre de grandeur</span></td></tr>
       <tr><th scope="row" class="long">Répartition sectorielle des émissions</th><td class="nombre">voir la page</td><td class="date">2023</td><td class="texte long">Citepa / SDES <span class="badge">Ordre de grandeur</span></td></tr>
       <tr><th scope="row" class="long">Part fossile de l'énergie finale consommée</th><td class="nombre">≈ 58 %</td><td class="date">2023</td><td class="texte long">SDES, bilan énergétique de la France <span class="badge">Ordre de grandeur</span></td></tr>
     </tbody>
@@ -58,16 +65,20 @@
     <caption><span>Ce que coûte l'énergie, et ce que l'État y prélève ou y dépense.</span></caption>
     <thead><tr><th scope="col" class="long">Ce que nous affirmons</th><th scope="col" class="nombre">Valeur</th><th scope="col" class="date">Année</th><th scope="col" class="texte long">Source</th></tr></thead>
     <tbody>
-      <tr><th scope="row" class="long">Accise sur l'électricité, ménages</th><td class="nombre">33,70 €/MWh</td><td class="date">depuis 2025</td><td class="texte long">Code des impositions sur les biens et services ; Légifrance</td></tr>
-      <tr><th scope="row" class="long">Accise pendant le bouclier tarifaire</th><td class="nombre">1 €/MWh</td><td class="date">2022-2023</td><td class="texte long">Légifrance</td></tr>
+      <tr><th scope="row" class="long">Accise sur l'électricité, ménages</th><td class="nombre">30,62 €/MWh</td><td class="date">depuis août 2026</td><td class="texte long">Code des impositions sur les biens et services ; Légifrance — après 33,70 € de février 2025 à juillet 2026</td></tr>
+      <tr><th scope="row" class="long">Rendement de cette accise</th><td class="nombre">&gt; 8 Md€</td><td class="date">2026</td><td class="texte long">Projet de loi de finances pour 2026</td></tr>
+      <tr><th scope="row" class="long">Accise avant la crise, part d'État et parts locales réunies</th><td class="nombre">≈ 32 €/MWh</td><td class="date">2021</td><td class="texte long">Légifrance — 22,5 € de TICFE, plus les taxes communale et départementale, depuis fusionnées <span class="badge">Ordre de grandeur</span></td></tr>
+      <tr><th scope="row" class="long">Accise pendant le bouclier tarifaire</th><td class="nombre">1 €/MWh</td><td class="date">2022-2023</td><td class="texte long">Légifrance — minimum autorisé par la directive européenne</td></tr>
+      <tr><th scope="row" class="long">Contribution tarifaire d'acheminement</th><td class="nombre">15 % de la part fixe du réseau de distribution</td><td class="date">depuis février 2026</td><td class="texte long">Légifrance ; CNIEG — 5 % pour les sites raccordés au réseau de transport</td></tr>
       <tr><th scope="row" class="long">TVA sur l'électricité, énergie et abonnement</th><td class="nombre">20 %</td><td class="date">depuis 2025</td><td class="texte long">Code général des impôts</td></tr>
-      <tr><th scope="row" class="long">Structure d'une facture : trois tiers</th><td class="nombre">≈ 1/3 chacun</td><td class="date">2024-2025</td><td class="texte long">CRE, délibérations tarifaires <span class="badge">Ordre de grandeur</span></td></tr>
+      <tr><th scope="row" class="long">Structure d'une facture : trois tiers</th><td class="nombre">≈ 1/3 chacun</td><td class="date">2024-2026</td><td class="texte long">CRE, délibérations tarifaires <span class="badge">Ordre de grandeur</span></td></tr>
       <tr><th scope="row" class="long">Composante carbone de la fiscalité des carburants</th><td class="nombre">44,60 €/t</td><td class="date">gelée depuis 2018</td><td class="texte long">Légifrance</td></tr>
+      <tr><th scope="row" class="long">Fiscalité énergétique totale</th><td class="nombre">≈ 37 Md€, dont ≈ 30 Md€ de TICPE</td><td class="date">2023</td><td class="texte long">SDES, fiscalité environnementale <span class="badge">Ordre de grandeur</span></td></tr>
       <tr><th scope="row" class="long">Coût brut des boucliers tarifaires</th><td class="nombre">&gt; 70 Md€</td><td class="date">2021-2023</td><td class="texte long">Cour des comptes <span class="badge">Ordre de grandeur</span></td></tr>
       <tr><th scope="row" class="long">Coût net après reversements</th><td class="nombre">≈ 40 Md€</td><td class="date">2021-2023</td><td class="texte long">Cour des comptes <span class="badge">Ordre de grandeur</span></td></tr>
       <tr><th scope="row" class="long">Facture énergétique nette de la France</th><td class="nombre">≈ 44 Md€</td><td class="date">2024</td><td class="texte long">Douanes / SDES — 116 Md€ en 2022</td></tr>
-      <tr><th scope="row" class="long">Prix TTC du kWh, ménage moyen, France</th><td class="nombre">≈ 28 c€</td><td class="date">2024</td><td class="texte long">Eurostat <span class="badge">Ordre de grandeur</span></td></tr>
-      <tr><th scope="row" class="long">Prix TTC du kWh, ménage moyen, Allemagne</th><td class="nombre">≈ 40 c€</td><td class="date">2024</td><td class="texte long">Eurostat <span class="badge">Ordre de grandeur</span></td></tr>
+      <tr><th scope="row" class="long">Prix TTC du kWh, ménage moyen, France</th><td class="nombre">≈ 28 c€</td><td class="date">2024</td><td class="texte long">Eurostat, série des prix de l'électricité, bande de consommation moyenne <span class="badge">Ordre de grandeur</span></td></tr>
+      <tr><th scope="row" class="long">Prix TTC du kWh, ménage moyen, Allemagne</th><td class="nombre">≈ 40 c€</td><td class="date">2024</td><td class="texte long">Eurostat, même série <span class="badge">Ordre de grandeur</span></td></tr>
     </tbody>
   </table>
 </div>
@@ -84,11 +95,16 @@
       <tr><th scope="row" class="long">Flamanville 3, coût complet</th><td class="nombre">19,1 Md€</td><td class="date">2020</td><td class="texte long">Cour des comptes, frais financiers compris</td></tr>
       <tr><th scope="row" class="long">Couplage au réseau de Flamanville 3</th><td class="nombre">décembre 2024</td><td class="date">2024</td><td class="texte long">EDF / RTE — douze ans après la date annoncée</td></tr>
       <tr><th scope="row" class="long">Programme de six EPR2, premier devis</th><td class="nombre">51,7 Md€</td><td class="date">2021, euros 2020</td><td class="texte long">EDF</td></tr>
-      <tr><th scope="row" class="long">Programme de six EPR2, devis réévalué</th><td class="nombre">≈ 67 Md€</td><td class="date">2023</td><td class="texte long">EDF <span class="badge">Ordre de grandeur</span></td></tr>
+      <tr><th scope="row" class="long">Programme de six EPR2, deuxième devis</th><td class="nombre">67,4 Md€</td><td class="date">2023</td><td class="texte long">EDF</td></tr>
+      <tr><th scope="row" class="long">Programme de six EPR2, plafond annoncé</th><td class="nombre">72,8 Md€</td><td class="date">décembre 2025, euros 2020</td><td class="texte long">EDF — hors frais financiers</td></tr>
+      <tr><th scope="row" class="long">Facture complète attendue, financement compris</th><td class="nombre">&gt; 100 Md€</td><td class="date">2025</td><td class="texte long">Cour des comptes <span class="badge">Ordre de grandeur</span></td></tr>
       <tr><th scope="row" class="long">Grand carénage du parc existant</th><td class="nombre">≈ 50 Md€</td><td class="date">estimation</td><td class="texte long">EDF / Cour des comptes <span class="badge">Ordre de grandeur</span></td></tr>
-      <tr><th scope="row" class="long">Endettement financier net d'EDF</th><td class="nombre">≈ 54 Md€</td><td class="date">fin 2024</td><td class="texte long">EDF, résultats annuels</td></tr>
+      <tr><th scope="row" class="long">Endettement financier net d'EDF</th><td class="nombre">51,5 Md€</td><td class="date">fin 2025</td><td class="texte long">EDF, résultats annuels publiés en février 2026 — 54,3 Md€ fin 2024</td></tr>
       <tr><th scope="row" class="long">Rachat du capital flottant d'EDF</th><td class="nombre">≈ 9,7 Md€</td><td class="date">2023</td><td class="texte long">Agence des participations de l'État</td></tr>
-      <tr><th scope="row" class="long">Puissance de Fessenheim</th><td class="nombre">1 800 MW — ≈ 11 TWh/an</td><td class="date">fermée en 2020</td><td class="texte long">EDF</td></tr>
+      <tr><th scope="row" class="long">Puissance de Fessenheim</th><td class="nombre">1 800 MW — ≈ 11 TWh/an</td><td class="date">fermée en 2020</td><td class="texte long">EDF <span class="badge">Ordre de grandeur</span></td></tr>
+      <tr><th scope="row" class="long">Plafond de responsabilité civile de l'exploitant</th><td class="nombre">700 M€</td><td class="date">depuis 2022</td><td class="texte long">Convention de Paris révisée ; code de l'environnement — l'Allemagne a choisi la responsabilité illimitée</td></tr>
+      <tr><th scope="row" class="long">Coût du stockage profond des déchets (Cigéo)</th><td class="nombre">25 Md€</td><td class="date">arrêté de 2016</td><td class="texte long">Ministère chargé de l'énergie ; Andra — chiffre contesté à la baisse par l'exploitant et à la hausse par l'autorité</td></tr>
+      <tr><th scope="row" class="long">Fin de l'ARENH, mécanisme de remplacement</th><td class="nombre">pivot ≈ 70 €/MWh</td><td class="date">depuis janvier 2026</td><td class="texte long">CRE — le versement pourrait ne pas se déclencher en 2026, les revenus attendus du parc étant estimés sous le seuil</td></tr>
     </tbody>
   </table>
 </div>
@@ -105,25 +121,116 @@
       <tr><th scope="row" class="long">Charges annuelles de soutien avant la crise</th><td class="nombre">5 à 8 Md€</td><td class="date">2018-2021</td><td class="texte long">CRE, charges de service public de l'énergie <span class="badge">Ordre de grandeur</span></td></tr>
       <tr><th scope="row" class="long">Reversements des producteurs pendant la crise</th><td class="nombre">plusieurs Md€</td><td class="date">2022-2023</td><td class="texte long">CRE — les charges sont devenues négatives</td></tr>
       <tr><th scope="row" class="long">Objectif européen de 2020 manqué</th><td class="nombre">19 % au lieu de 23 %</td><td class="date">2020</td><td class="texte long">Eurostat — seul État membre dans ce cas</td></tr>
+      <tr><th scope="row" class="long">Objectif européen en vigueur</th><td class="nombre">42,5 % en 2030</td><td class="date">directive de 2023</td><td class="texte long">Directive RED III — objectif contraignant pour l'Union, décliné en contributions nationales ; transposition française en retard</td></tr>
       <tr><th scope="row" class="long">Investissements de réseau annoncés par RTE</th><td class="nombre">≈ 100 Md€ d'ici 2040</td><td class="date">annoncé en 2023</td><td class="texte long">RTE, schéma décennal <span class="badge">Ordre de grandeur</span></td></tr>
       <tr><th scope="row" class="long">Tarif d'achat solaire de la bulle</th><td class="nombre">jusqu'à ≈ 600 €/MWh</td><td class="date">2006-2010</td><td class="texte long">Arrêtés tarifaires, Légifrance</td></tr>
+      <tr><th scope="row" class="long">Part de l'hydraulique dans la production</th><td class="nombre">12 à 14 % selon l'année</td><td class="date">2024-2025</td><td class="texte long">RTE — 74,7 TWh en 2024, 62,4 TWh en 2025</td></tr>
     </tbody>
   </table>
+</div>
+
+<h2>Ce que font les autres, et ce que dit la recherche</h2>
+
+<div class="defilant">
+  <table>
+    <caption><span>Les précédents étrangers et les travaux que nous citons à l'appui — ou à l'encontre — de nos propositions.</span></caption>
+    <thead><tr><th scope="col" class="long">Ce que nous affirmons</th><th scope="col" class="nombre">Valeur</th><th scope="col" class="date">Année</th><th scope="col" class="texte long">Source</th></tr></thead>
+    <tbody>
+      <tr><th scope="row" class="long">Suisse : taxe CO₂ redistribuée par habitant</th><td class="nombre">120 CHF/t</td><td class="date">depuis 2008, taux depuis 2022</td><td class="texte long">Office fédéral de l'environnement — redistribution par les caisses d'assurance maladie, sans interruption</td></tr>
+      <tr><th scope="row" class="long">Canada : fin du prix carbone aux consommateurs</th><td class="nombre">ramené à zéro</td><td class="date">printemps 2025</td><td class="texte long">Gouvernement du Canada — le dispositif avait fonctionné de 2019 à 2025</td></tr>
+      <tr><th scope="row" class="long">Autriche : suppression du bonus climatique</th><td class="nombre">1,8 Md€ d'économie</td><td class="date">2025</td><td class="texte long">Parlement autrichien — le prix du carbone, lui, a été maintenu à 55 €/t</td></tr>
+      <tr><th scope="row" class="long">Perdants du premier décile sous restitution forfaitaire</th><td class="nombre">&gt; 30 %</td><td class="date">2018</td><td class="texte long">Institut des politiques publiques, note n° 34, <em>Les effets redistributifs de la fiscalité carbone</em></td></tr>
+      <tr><th scope="row" class="long">Ménages ruraux des six premiers déciles gagnants</th><td class="nombre">82 % des cas</td><td class="date">2025</td><td class="texte long">INSEE, document de travail — transfert supérieur de 44 % à celui des urbains</td></tr>
+      <tr><th scope="row" class="long">Valeur de l'action pour le climat retenue pour 2030</th><td class="nombre">250 €/t</td><td class="date">rapport de 2019</td><td class="texte long">France Stratégie, commission Quinet</td></tr>
+      <tr><th scope="row" class="long">Extension du marché carbone européen au chauffage et aux transports</th><td class="nombre">reportée à 2028</td><td class="date">décidé en novembre 2025</td><td class="texte long">Conseil et Parlement européens — initialement prévue pour 2027</td></tr>
+      <tr><th scope="row" class="long">Ajustement carbone aux frontières</th><td class="nombre">régime définitif</td><td class="date">depuis 2026</td><td class="texte long">Commission européenne</td></tr>
+      <tr><th scope="row" class="long">Programmation pluriannuelle de l'énergie</th><td class="nombre">décret n° 2026-76</td><td class="date">février 2026</td><td class="texte long">Légifrance — publiée sans loi de programmation préalable</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="hypotheses">Les hypothèses de nos calculs</h2>
+
+<p>Tout ce qui précède se lit dans une publication publique. Ce qui suit, non :
+ce sont nos propres calculs, et ils ne valent que par les hypothèses qui les
+portent. Les voici, pour que vous puissiez les refaire — ou nous montrer où nous
+nous trompons.</p>
+
+<div class="defilant">
+  <table>
+    <caption><span>Facteurs de combustion retenus, arrondis, d'après la Base Empreinte de l'ADEME. Ils servent à convertir un litre ou un kilowattheure en tonnes de CO₂.</span></caption>
+    <thead><tr><th scope="col">Énergie</th><th scope="col" class="nombre">CO₂ émis</th><th scope="col" class="nombre">Accise actuelle retenue</th><th scope="col" class="nombre">Prix implicite du carbone</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Essence</th><td class="nombre">2,28 kg/L</td><td class="nombre">0,68 €/L</td><td class="nombre">≈ 300 €/t</td></tr>
+      <tr><th scope="row">Gazole</th><td class="nombre">2,64 kg/L</td><td class="nombre">0,60 €/L</td><td class="nombre">≈ 227 €/t</td></tr>
+      <tr><th scope="row">Gaz naturel</th><td class="nombre">0,202 kg/kWh</td><td class="nombre">≈ 16,4 €/MWh</td><td class="nombre">≈ 81 €/t</td></tr>
+      <tr><th scope="row">Fioul domestique</th><td class="nombre">2,68 kg/L</td><td class="nombre">≈ 0,16 €/L</td><td class="nombre">≈ 58 €/t</td></tr>
+      <tr><th scope="row">Kérosène, vols intérieurs</th><td class="nombre">2,52 kg/L</td><td class="nombre">0</td><td class="nombre">0 €/t</td></tr>
+      <tr><th scope="row">Électricité</th><td class="nombre">19,6 g/kWh</td><td class="nombre">30,62 €/MWh</td><td class="nombre">≈ 1 560 €/t</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p class="discret">Les tarifs d'accise sont ceux du guide annuel de la fiscalité
+des énergies publié par le ministère chargé de l'énergie, arrondis ; les prix
+implicites sont le quotient des deux colonnes précédentes, et sont donc des
+<span class="badge">Ordres de grandeur</span>. Ils varient de quelques pour cent
+d'une année à l'autre et, pour les carburants, selon la teneur en
+biocarburants.</p>
+
+<div class="carte">
+  <h3>Le dividende</h3>
+  <p>250 millions de tonnes de CO₂ fossile, multipliées par 100 € la tonne, font
+  25 milliards d'euros ; divisés par 53 millions d'adultes, ils font 472 € par an
+  et par adulte, soit 39 € par mois. À l'année dix, nous retenons 250 € la tonne
+  sur une assiette réduite à 200 millions de tonnes, soit environ 900 € par an.
+  La réduction d'assiette est une hypothèse de travail, et c'est la plus
+  incertaine de la page : si les émissions baissent moins vite, le dividende est
+  plus élevé et l'effort plus rude ; si elles baissent plus vite, l'inverse.</p>
+</div>
+
+<div class="carte">
+  <h3>Les profils de ménages</h3>
+  <p>Chauffage électrique : 12 000 kWh par an. Chauffage au gaz : 15 000 kWh.
+  Chauffage au fioul : 2 000 litres. Automobile : 6,5 litres aux cent
+  kilomètres. La TVA à 20 % est appliquée aux montants de taxe pour les ménages.
+  Ces profils sont des cas types, pas des moyennes nationales : ils servent à
+  montrer un ordre de grandeur et un sens de variation, pas à prédire votre
+  facture.</p>
+</div>
+
+<div class="carte">
+  <h3>Le chiffrage budgétaire</h3>
+  <p>Part carbone des accises carburants : 120 Mt de CO₂ routier à 100 €/t, soit
+  12 Md€ qui vont au dividende au lieu du budget. Part carbone du gaz et du
+  fioul : environ 50 Mt hors installations sous quotas européens, soit 5 Md€.
+  Accise sur l'électricité supprimée : 8 Md€, rendement inscrit au budget 2026.
+  TVA assise sur les accises supprimées : environ 2 Md€. Contribution tarifaire
+  d'acheminement transférée au budget : environ 2 Md€. Total arrondi :
+  <strong>29 Md€</strong>, soit de l'ordre de 1 % du produit intérieur brut.</p>
+  <p class="discret">Ce total est un ordre de grandeur, et il est plutôt
+  conservateur : il ne compte pas les effets de comportement, qui réduisent
+  l'assiette, ni les recettes nouvelles sur les usages aujourd'hui exonérés, qui
+  vont au dividende et non au budget.</p>
 </div>
 
 <h2>Ce que nous ne savons pas</h2>
 
 <div class="note vigilance">
-  <p><strong>Deux réserves, et nous préférons les écrire.</strong></p>
+  <p><strong>Trois réserves, et nous préférons les écrire.</strong></p>
   <p>D'abord, les chiffres marqués <span class="badge">Ordre de grandeur</span>
   sont des arrondis de travail : ils sont exacts à ce qu'ils prétendent dire —
   « environ un tiers », « autour de cinquante milliards » — et faux si on les
   cite à la décimale. Ne les citez pas à la décimale.</p>
-  <p>Ensuite, la situation réglementaire bouge vite. L'extinction de l'ARENH fin
-  2025, le mécanisme qui lui succède et l'état d'adoption de la programmation
-  pluriannuelle de l'énergie sont décrits tels que nous les connaissions au
-  printemps 2026. Si vous lisez cette page bien plus tard, vérifiez ces
-  trois points-là avant de les citer.</p>
+  <p>Ensuite, la situation réglementaire bouge vite. Le mécanisme qui a succédé
+  à l'ARENH en janvier 2026, le niveau de l'accise sur l'électricité — modifié
+  trois fois en deux ans — et le calendrier européen du marché carbone sont
+  décrits tels que nous les connaissions en septembre 2026. Si vous lisez cette
+  page bien plus tard, vérifiez ces trois points-là avant de les citer.</p>
+  <p>Enfin, nos propres calculs sont des calculs de coin de table honnêtes, pas
+  une étude d'impact. Un gouvernement qui porterait ce programme devrait les
+  faire refaire par l'administration, et publier le résultat même s'il nous
+  dérange.</p>
 </div>
 
 <h2>Où aller voir</h2>
@@ -132,8 +239,11 @@
   <li><a href="https://www.rte-france.com/">RTE</a> — gestionnaire du réseau de transport. Bilan électrique annuel, données de production en temps réel, prospective.</li>
   <li><a href="https://www.cre.fr/">Commission de régulation de l'énergie</a> — tarifs, charges de service public, délibérations.</li>
   <li><a href="https://www.ccomptes.fr/">Cour des comptes</a> — rapports sur le soutien aux renouvelables, l'EPR, les boucliers tarifaires.</li>
-  <li><a href="https://www.statistiques.developpement-durable.gouv.fr/">SDES</a> — service statistique du ministère : bilan énergétique, facture énergétique.</li>
+  <li><a href="https://www.statistiques.developpement-durable.gouv.fr/">SDES</a> — service statistique du ministère : bilan énergétique, facture énergétique, fiscalité environnementale.</li>
   <li><a href="https://www.citepa.org/">Citepa</a> — inventaire national des émissions de gaz à effet de serre.</li>
+  <li><a href="https://base-empreinte.ademe.fr/">Base Empreinte de l'ADEME</a> — les facteurs d'émission que nous utilisons.</li>
+  <li><a href="https://www.ipp.eu/">Institut des politiques publiques</a> et <a href="https://www.insee.fr/">INSEE</a> — les effets redistributifs de la fiscalité carbone, y compris ceux qui nous gênent.</li>
+  <li><a href="https://www.strategie.gouv.fr/">France Stratégie</a> — la valeur de l'action pour le climat.</li>
   <li><a href="https://ec.europa.eu/eurostat">Eurostat</a> — prix de l'énergie comparés, part des renouvelables.</li>
   <li><a href="https://www.legifrance.gouv.fr/">Légifrance</a> — les textes eux-mêmes, qui sont souvent plus clairs que leurs commentaires.</li>
 </ul>

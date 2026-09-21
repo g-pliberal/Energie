@@ -85,6 +85,9 @@ GABARIT = """<!doctype html>
   vigueur, puis il défend une alternative. Les chiffres du constat sont publics
   et <a href="sources.html">portent chacun leur source et leur millésime</a> ;
   les propositions, elles, n'engagent que nous.</p>
+  <p class="verifie">Chiffres de cette page vérifiés en {verifie}. Une donnée
+  périmée ou fausse se signale <a href="{depot}/issues">par une issue</a> : elle
+  sera corrigée ou la page portera la contestation.</p>
   <p>Textes et infographies sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a>,
   code sous licence Apache 2.0, sur <a href="{depot}">GitHub</a>.
   Le site ne dépose aucun cookie, ne mesure aucune audience et ne charge ni
@@ -121,7 +124,7 @@ def navigation(onglet_actif: str) -> str:
 
 
 def lire(source: Path) -> tuple[dict[str, str], str]:
-    """Un corps de page et ses trois métadonnées, portées par des commentaires.
+    """Un corps de page et ses quatre métadonnées, portées par des commentaires.
 
     Le format est volontairement pauvre — `<!-- clé: valeur -->` en tête de
     fichier — pour que le fragment reste du HTML qu'un navigateur affiche tel
@@ -129,12 +132,12 @@ def lire(source: Path) -> tuple[dict[str, str], str]:
     """
     texte = source.read_text(encoding="utf-8")
     meta: dict[str, str] = {}
-    for cle in ("titre", "description", "onglet"):
+    for cle in ("titre", "description", "onglet", "verifie"):
         trouve = re.search(rf"^<!-- {cle}: (.*?) -->$", texte, re.M)
         if not trouve:
             raise SystemExit(f"{source.name} : métadonnée « {cle} » manquante")
         meta[cle] = trouve.group(1).strip()
-    corps = re.sub(r"^<!-- (?:titre|description|onglet): .*? -->\n", "", texte, flags=re.M)
+    corps = re.sub(r"^<!-- (?:titre|description|onglet|verifie): .*? -->\n", "", texte, flags=re.M)
     return meta, corps.strip()
 
 
@@ -147,6 +150,7 @@ def rendre(source: Path) -> str:
         nom_du_site=NOM_DU_SITE,
         navigation=navigation(onglet),
         corps=corps,
+        verifie=meta["verifie"],
         depot=DEPOT,
         site_parent=SITE_PARENT,
     )
