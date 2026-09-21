@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- La couleur du bandeau, la même que le fond : sur un téléphone, la barre du
+     navigateur la reprend, et la page commence où elle commence. -->
+<meta name="theme-color" content="#0b3d3a">
+<title>Ce que vous payez — Énergie, le programme libéral</title>
+<meta name="description" content="Décomposition d'une facture d'électricité française : un tiers d'énergie, un tiers de réseau, un tiers de taxes — dont une qui finance les retraites des électriciens. Et ce que les boucliers tarifaires ont réellement coûté.">
+<link rel="icon" href="moteur/icone.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="moteur/icone.svg">
+<!-- La charte, reprise du dépôt frère et jamais modifiée ici, puis les ajouts
+     propres à l'énergie. L'ordre compte : le second redéfinit des variables du
+     premier. -->
+<link rel="stylesheet" href="moteur/style.css">
+<link rel="stylesheet" href="moteur/energie.css">
+</head>
+<body>
+
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header class="bandeau"><div class="interieur">
+  <p class="nom"><a href="index.html"><span>Énergie — programme libéral</span></a></p>
+  <nav aria-label="Navigation principale">
+    <span class="groupe"><span class="etiquette">Le constat</span><span class="liens"><a href="constat.html">La France</a><a href="prix.html" aria-current="page">Votre facture</a><a href="nucleaire.html">Nucléaire</a><a href="renouvelables.html">Renouvelables</a></span></span>
+    <span class="groupe"><span class="etiquette">La proposition</span><span class="liens"><a href="programme.html">Le programme</a><a href="objections.html">Objections</a></span></span>
+    <span class="groupe"><span class="etiquette">Les références</span><span class="liens"><a href="sources.html">Sources</a></span></span>
+  </nav>
+</div></header>
+
+<main id="contenu">
+
+<div class="affiche">
+  <p class="surtitre">Le constat</p>
+  <h1>Un tiers de votre facture <span class="serif">n'est pas de l'électricité</span></h1>
+  <p class="chapeau">Vous payez l'énergie, le réseau qui l'achemine, et puis autre chose : des taxes, une contribution qui finance des retraites, et le remboursement d'aides d'urgence décidées en 2022. Ce dernier tiers n'a rien à voir avec le courant qui sort de votre prise.</p>
+</div>
+
+<nav class="plan" aria-label="Plan de la page">
+  <p class="etiquette">Sur cette page</p>
+  <ol>
+    <li><a href="#trois-tiers">Les trois tiers</a></li>
+    <li><a href="#taxes">Ce que contiennent les taxes</a></li>
+    <li><a href="#bouclier">Ce que le bouclier a coûté</a></li>
+    <li><a href="#alternative">Ce que nous proposons</a></li>
+  </ol>
+</nav>
+
+<h2 id="trois-tiers">Les trois tiers</h2>
+
+<p>Une facture d'électricité au tarif réglementé se décompose, en ordre de
+grandeur, en trois parts à peu près égales. La proportion exacte varie avec le
+profil de consommation et le prix de l'énergie de l'année ; la structure, elle,
+ne bouge pas.</p>
+
+<div class="barre mix" role="img" aria-label="Décomposition d'une facture d'électricité : environ un tiers de fourniture, un tiers d'acheminement, un tiers de taxes.">
+  <span style="width:34%;background:var(--serie-1)"></span>
+  <span style="width:33%;background:var(--serie-3)"></span>
+  <span style="width:33%;background:var(--serie-6)"></span>
+</div>
+<ul class="legende">
+  <li><span class="pastille" style="background:var(--serie-1)"></span> Fourniture — l'électricité elle-même</li>
+  <li><span class="pastille" style="background:var(--serie-3)"></span> Acheminement — le réseau (TURPE)</li>
+  <li><span class="pastille" style="background:var(--serie-6)"></span> Taxes et contributions</li>
+</ul>
+
+<div class="carte">
+  <h3>Le seul tiers qui paie de l'électricité</h3>
+  <p>C'est le premier. Les deux autres paient un réseau — ce qui est légitime,
+  un câble coûte — et des politiques publiques qui ont été mises là parce qu'une
+  facture ne se vote pas.</p>
+</div>
+
+<h2 id="taxes">Ce que contiennent les taxes</h2>
+
+<div class="defilant">
+  <table>
+    <caption><span>Les prélèvements portés par une facture d'électricité domestique, état 2025-2026.</span></caption>
+    <thead><tr><th scope="col">Prélèvement</th><th scope="col" class="nombre">Niveau</th><th scope="col" class="texte long">Ce qu'il finance réellement</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Accise sur l'électricité</th><td class="nombre">33,70 €/MWh</td><td class="texte long">Le budget général. Ce n'est pas une taxe carbone : l'électricité française n'en émet quasiment pas. C'est une taxe de rendement sur un bien de première nécessité.</td></tr>
+      <tr><th scope="row">Contribution tarifaire d'acheminement</th><td class="nombre">≈ 22 % de la part fixe du réseau</td><td class="texte long">Les droits de retraite acquis avant 2005 par les agents des industries électriques et gazières. Un régime spécial, financé par tous les abonnés, sur leur facture d'électricité.</td></tr>
+      <tr><th scope="row">TVA</th><td class="nombre">20 %</td><td class="texte long">Appliquée sur l'énergie, sur l'abonnement et sur les autres taxes : une TVA assise sur des taxes, c'est-à-dire un impôt sur un impôt.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="note">
+  <p><strong>La contribution tarifaire d'acheminement mérite d'être lue deux
+  fois.</strong> Vous financez, sur votre facture d'électricité, les droits de
+  retraite d'un régime spécial fermé depuis vingt ans. La dépense peut être
+  défendable ; sa localisation ne l'est pas. Une dépense de retraite se vote au
+  budget des retraites, où les citoyens peuvent la voir, la discuter et la
+  refuser.</p>
+  <p class="discret">Le Parti libéral français a un programme complet sur ce
+  sujet : <a href="https://partiliberalfrancais.fr/retraite/">la retraite à
+  comptes notionnels</a>.</p>
+</div>
+
+<h3>Et le soutien aux renouvelables ?</h3>
+
+<p>Il n'est plus sur votre facture d'électricité — et c'est une nuance que
+presque personne ne connaît. Jusqu'en 2016, la « CSPE » finançait sur la facture
+les contrats d'achat des producteurs éoliens et solaires. Depuis, ces charges
+sont portées par le <strong>budget de l'État</strong>, alimenté notamment par la
+fiscalité des carburants.</p>
+
+<p><strong class="cle-texte">Elles n'ont pas disparu : elles ont changé de
+poche.</strong> Vous les payez toujours, en tant que contribuable au lieu
+d'abonné, et vous ne les voyez plus du tout. C'est un progrès budgétaire et un
+recul démocratique.</p>
+
+<h2 id="bouclier">Ce que le bouclier a coûté</h2>
+
+<p>Entre 2021 et 2023, l'État a bloqué les tarifs, ramené l'accise sur
+l'électricité de 32 à 1 € le mégawattheure, distribué des chèques exceptionnels
+et plafonné les prix du gaz. Le coût brut de ces mesures dépasse
+<strong class="cle-texte">70 milliards d'euros</strong> ; net des reversements
+prélevés sur les producteurs, la Cour des comptes le situe autour de
+40 milliards.</p>
+
+<div class="points">
+  <div class="point">
+    <h3>Ça n'a rien trié</h3>
+    <p>Un plafonnement de prix aide proportionnellement à la consommation : la maison de 200 m² a reçu davantage que le studio. Une aide qui augmente avec la dépense n'est pas une aide sociale, c'est une subvention à la consommation.</p>
+  </div>
+  <div class="point">
+    <h3>Ça a éteint le signal</h3>
+    <p>Le moment où l'électricité était rare était exactement celui où il fallait qu'elle coûte cher, pour qu'on en économise. On a fait payer la rareté par la dette plutôt que par le prix — et on a donc moins économisé.</p>
+  </div>
+  <div class="point">
+    <h3>Ça se rembourse maintenant</h3>
+    <p>L'accise est remontée à 33,70 €/MWh, au-dessus de son niveau d'avant-crise. La baisse d'hier se paie aujourd'hui, sur la même facture, sans que personne l'ait présentée ainsi.</p>
+  </div>
+</div>
+
+<div class="note vigilance">
+  <p><strong>Ce qu'il faut reconnaître au bouclier.</strong> Il a évité, à
+  l'hiver 2022, des impayés de masse et une crise sociale dans un pays où dix
+  millions de logements se chauffent à l'électricité. Le reproche que nous lui
+  faisons n'est pas d'avoir protégé : c'est d'avoir protégé <em>par le prix</em>,
+  donc tout le monde, donc surtout ceux qui consommaient le plus, et sans jamais
+  dire ce que ça coûterait ni qui rembourserait.</p>
+</div>
+
+<h2 id="alternative">Ce que nous proposons</h2>
+
+<div class="confrontation">
+  <div class="volet">
+    <p class="etiquette">Aujourd'hui</p>
+    <p>Quand les prix montent, l'État bloque le tarif pour tout le monde et rembourse par la dette. L'aide croît avec la consommation, le signal de rareté disparaît, et la facture revient quatre ans plus tard sous forme de taxe.</p>
+    <p>Sur la facture s'empilent une accise de rendement, une contribution de retraite et une TVA assise sur les deux.</p>
+  </div>
+  <div class="volet propose">
+    <p class="etiquette">Ce que nous proposons</p>
+    <p>Le prix reste libre et dit la vérité. La protection passe par un versement forfaitaire, identique pour chacun, indépendant de ce qu'on consomme : qui économise garde l'argent, qui consomme paie le prix.</p>
+    <p>Trois lignes sur la facture, et pas une de plus : l'énergie, le réseau, le carbone. Les retraites au budget des retraites, le social au budget social.</p>
+  </div>
+</div>
+
+<section class="cle">
+  <h3>Combien resterait-il sur ma facture ?</h3>
+  <p class="reponse">Nous ne promettons pas un chiffre : le prix de l'énergie
+  dépend des marchés, et quiconque vous promet un tarif pour 2030 vous ment.
+  Nous promettons une <strong class="cle-texte">structure</strong> : trois lignes
+  lisibles, un versement carbone qui arrive chaque mois sur votre compte, et
+  plus une seule politique publique cachée dans un prix.</p>
+  <p class="source">Le détail de chaque engagement : <a href="programme.html">le programme</a>.</p>
+</section>
+
+<p class="actions"><a class="bouton" href="programme.html">Le programme en détail</a>
+<a class="bouton second" href="renouvelables.html">Ce que les subventions ont coûté</a></p>
+
+</main>
+
+<footer>
+  <p><strong>Ce site est un document politique.</strong> Il est publié par le
+  Parti libéral français : il décrit d'abord la politique énergétique en
+  vigueur, puis il défend une alternative. Les chiffres du constat sont publics
+  et <a href="sources.html">portent chacun leur source et leur millésime</a> ;
+  les propositions, elles, n'engagent que nous.</p>
+  <p>Textes et infographies sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a>,
+  code sous licence Apache 2.0, sur <a href="https://github.com/g-pliberal/Energie">GitHub</a>.
+  Le site ne dépose aucun cookie, ne mesure aucune audience et ne charge ni
+  police, ni script, ni image venus d'un tiers : personne n'apprend que vous
+  l'avez lu.</p>
+  <p class="retour-site">Un site du <a href="https://partiliberalfrancais.fr/">Parti libéral français</a>.</p>
+</footer>
+
+</body>
+</html>

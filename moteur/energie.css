@@ -1,0 +1,116 @@
+/* Les ajouts propres au site Énergie. Chargé APRÈS `style.css`, qui porte la
+   charte et ne se modifie pas ici : tout ce qui suit est ce que l'énergie
+   demande en plus — des couleurs de filière, une barre empilée pour le mix, et
+   deux dispositifs de confrontation qui n'existaient pas sur le site frère.
+   Rien n'y redéfinit un sélecteur de la charte ; seules des variables y sont
+   ajoutées, ce que la charte prévoit explicitement. */
+
+:root {
+  /* LES SIX FILIÈRES DU MIX. Elles sont prises dans la palette de séries de la
+     charte, qui est déjà mesurée : toutes tiennent au moins 4,5:1 sur le vert
+     profond, et se séparent sous deutéranopie. L'attribution n'est pas
+     arbitraire — le nucléaire prend le crème, la teinte la plus claire, parce
+     qu'il pèse les deux tiers de la production et doit dominer la barre ;
+     le fossile prend le brun-rosé, la seule teinte sale de la palette.
+     La couleur ne porte jamais seule : chaque tranche du mix est aussi
+     intitulée dans la légende et chiffrée dans le tableau qui la double. */
+  --nucleaire: var(--serie-1);
+  --hydraulique: var(--serie-3);
+  --eolien: var(--serie-5);
+  --solaire: var(--serie-6);
+  --bioenergie: var(--serie-7);
+  --fossile: var(--serie-8);
+  /* Les deux camps de la comparaison européenne : la France et le voisin dont
+     on cite toujours l'exemple. */
+  --france: var(--or);
+  --allemagne: var(--serie-2);
+}
+
+/* -- la barre du mix --------------------------------------------------------
+   La charte a `.barre`, qui porte une grandeur d'une seule couleur. Le mix en
+   demande six, bout à bout, et un peu plus de hauteur : c'est une figure à
+   elle seule, et non l'illustration d'un montant. */
+.barre.mix { height: 34px; margin-top: 1rem; }
+.barre.mix > span { height: 34px; }
+.barre.mix > span.nucleaire { background: var(--nucleaire); }
+.barre.mix > span.hydraulique { background: var(--hydraulique); }
+.barre.mix > span.eolien { background: var(--eolien); }
+.barre.mix > span.solaire { background: var(--solaire); }
+.barre.mix > span.bioenergie { background: var(--bioenergie); }
+.barre.mix > span.fossile { background: var(--fossile); }
+
+/* La barre d'une comparaison à deux pays : même objet, deux longueurs. Elle
+   porte son intitulé et sa valeur au-dessus, parce qu'une barre sans nombre
+   ne se cite pas. */
+.duel { margin: 1.5rem 0; display: grid; gap: 1rem; max-width: 46rem; }
+.duel > .ligne { display: grid; gap: 0.3rem; }
+.duel > .ligne > .tete {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 1rem; font-size: 0.9375rem; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--texte-doux);
+}
+.duel > .ligne > .tete > .valeur {
+  font-size: 1.375rem; font-weight: 900; letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums; text-transform: none;
+  color: var(--texte);
+}
+.duel > .ligne > .barre { margin-top: 0; }
+.duel .barre.france > span { background: var(--france); }
+.duel .barre.allemagne > span { background: var(--allemagne); }
+
+/* -- la confrontation -------------------------------------------------------
+   Le dispositif central du site : à gauche la règle en vigueur, à droite ce
+   qu'on propose de mettre à la place. Deux colonnes de même largeur, la
+   seconde marquée à l'or — c'est la proposition, et c'est elle qu'on retient.
+   Sous 48 rem elles s'empilent, et le filet vertical devient horizontal : un
+   filet à gauche ne sépare plus rien quand tout est l'un sous l'autre. */
+.confrontation {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  margin: 1.5rem 0; border-top: 1px solid var(--trait);
+}
+.confrontation > .volet { padding: 1.25rem 1.5rem 1.25rem 0; }
+.confrontation > .volet:nth-child(even) {
+  padding: 1.25rem 0 1.25rem 1.5rem; box-shadow: -1px 0 0 var(--trait);
+}
+.confrontation > .volet > .etiquette {
+  margin: 0 0 0.5rem; font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--texte-doux);
+}
+.confrontation > .volet.propose > .etiquette { color: var(--or); }
+.confrontation > .volet > p { margin: 0.4rem 0 0; font-size: 1rem; }
+.confrontation > .volet > p:first-of-type { margin-top: 0; }
+.confrontation > .volet.propose > p { color: var(--texte); }
+.confrontation > .volet:not(.propose) > p { color: var(--texte-doux); }
+@media (max-width: 48rem) {
+  .confrontation { grid-template-columns: 1fr; }
+  .confrontation > .volet,
+  .confrontation > .volet:nth-child(even) {
+    padding: 1.25rem 0; box-shadow: none; border-top: 1px solid var(--trait);
+  }
+  .confrontation > .volet:first-child { border-top: 0; }
+}
+
+/* -- la chronologie ---------------------------------------------------------
+   Une décision, sa date, ce qu'elle a coûté. C'est le format du constat : les
+   choix énergétiques se jugent sur vingt ans, et une liste à puces les aplatit
+   tous au même rang. L'année est le repère, et elle est énorme pour ça. */
+ol.jalons { margin: 2rem 0; padding: 0; list-style: none;
+            border-top: 1px solid var(--trait); }
+ol.jalons > li {
+  display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.5rem 1.25rem;
+  padding: 1.1rem 0; border-bottom: 1px solid var(--trait);
+  align-items: baseline;
+}
+ol.jalons > li > .annee {
+  font-size: 2rem; line-height: 0.9; font-weight: 900; letter-spacing: -0.045em;
+  color: var(--or); font-variant-numeric: tabular-nums;
+}
+ol.jalons > li > .fait { margin: 0; max-width: 46rem; }
+ol.jalons > li > .fait > strong { display: block; font-size: 1.1875rem;
+                                  font-weight: 800; letter-spacing: -0.01em; }
+ol.jalons > li > .fait > span { display: block; margin-top: 0.3rem;
+                                color: var(--texte-doux); font-size: 1rem; }
+@media (max-width: 34rem) {
+  ol.jalons > li { grid-template-columns: 1fr; }
+  ol.jalons > li > .annee { font-size: 1.625rem; }
+}
