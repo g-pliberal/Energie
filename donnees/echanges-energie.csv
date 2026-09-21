@@ -1,0 +1,7 @@
+indicateur,valeur,unite,annee,source
+facture_energetique_nette,126.5,MdEUR,2022,SDES / Douanes — record historique
+facture_energetique_nette,58,MdEUR,2024,Déduit de la baisse de 21 pct annoncée pour 2025 — ordre de grandeur
+facture_energetique_nette,45.8,MdEUR,2025,"SDES, bilan énergétique de la France, données provisoires — en baisse de 21 pct"
+importations_combustibles_fossiles,53,MdEUR,2025,"Douanes — pétrole, gaz et charbon"
+valeur_exportations_electricite,5.2,MdEUR,2024,RTE
+valeur_exportations_electricite,5.4,MdEUR,2025,RTE
