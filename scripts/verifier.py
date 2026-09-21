@@ -139,9 +139,11 @@ def controler_donnees() -> list[str]:
     if abs(parts - 100) > 0.5:
         erreurs.append(f"donnees/facture-electricite.csv : les parts font {parts:.1f} %")
 
-    parts = sum(float(l["part_pct"]) for l in _lire("emissions-secteurs.csv"))
-    if parts > 100:
-        erreurs.append(f"donnees/emissions-secteurs.csv : les parts font {parts:.1f} %")
+    secteurs = _lire("emissions-secteurs.csv")
+    for annee in sorted({l["annee"] for l in secteurs}):
+        parts = sum(float(l["part_pct"]) for l in secteurs if l["annee"] == annee)
+        if parts > 100:
+            erreurs.append(f"donnees/emissions-secteurs.csv : {annee}, les parts font {parts:.1f} %")
 
     # Le chiffrage : les postes font le total annoncé. Les lignes marquées
     # « hors total » sont ce qui ne pèse pas sur le budget, et n'y entrent pas.
@@ -221,6 +223,12 @@ def main() -> int:
                 continue
             if ancre and ancre not in lecteurs[cible].ancres:
                 erreurs.append(f"{nom} : lien vers « {lien} », ancre introuvable")
+
+    # Les jetons du gabarit. Un « {{directeur_publication}} » qui atteint la page
+    # publiée est pire qu'une page absente : c'est une mention légale vide.
+    for page in pages:
+        for jeton in set(re.findall(r"\{\{[a-z_]+\}\}", page.read_text(encoding="utf-8"))):
+            erreurs.append(f"{page.name} : jeton non remplacé — {jeton}")
 
     # Les ressources citées par les pages : feuilles, icône, polices.
     for page in pages:
