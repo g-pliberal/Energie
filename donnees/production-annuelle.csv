@@ -1,0 +1,14 @@
+annee,indicateur,valeur,unite,source
+2024,production_totale,536.5,TWh,"RTE, Bilan électrique 2024"
+2024,solde_exportateur_net,89.0,TWh,"RTE, Bilan électrique 2024"
+2024,intensite_carbone,21.0,gCO2/kWh,"RTE ; recoupé par Ember"
+2024,heures_prix_negatifs,352,h,RTE / EPEX Spot
+2025,production_totale,547.5,TWh,"RTE, Bilan électrique 2025"
+2025,production_bas_carbone,521.1,TWh,"RTE, Bilan électrique 2025"
+2025,production_nucleaire,373.0,TWh,"RTE, Bilan électrique 2025"
+2025,consommation_interieure,451.0,TWh,"RTE, Bilan électrique 2025"
+2025,solde_exportateur_net,92.3,TWh,"RTE, Bilan électrique 2025"
+2025,intensite_carbone,19.6,gCO2/kWh,"RTE, Bilan électrique 2025"
+2025,emissions_production,10.9,MtCO2e,"RTE, Bilan électrique 2025"
+2025,heures_prix_negatifs,513,h,RTE / EPEX Spot
+2022,production_nucleaire,279.0,TWh,RTE — plus bas niveau depuis 1988

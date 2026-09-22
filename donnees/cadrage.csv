@@ -1,0 +1,12 @@
+indicateur,valeur,unite,annee,source
+population_france,69.1,millions,2026,"INSEE, bilan démographique au 1er janvier 2026"
+adultes_beneficiaires_dividende,55,millions,2026,"Calcul : population moins les mineurs, estimés à 14 millions — ordre de grandeur"
+residences_chauffage_electricite,36,pct,2022,SDES / INSEE — environ 11 millions de logements
+residences_chauffage_gaz,35,pct,2022,SDES / INSEE — environ 10.7 millions de logements
+residences_chauffage_fioul,8.5,pct,2022,"INSEE, Insee Première n. 2088 — 2.6 millions de logements"
+population_avec_compte_bancaire,99,pct,2025,"Banque de France, Observatoire de l'inclusion bancaire — droit au compte depuis 1984"
+emissions_transports,124.9,MtCO2e,2024,"Citepa, rapport Secten — 34 pct des émissions nationales"
+emissions_transport_routier,117,MtCO2e,2024,Citepa — 94 pct du secteur des transports
+emissions_ges_totales,367,MtCO2e,2024,"Citepa, rapport Secten 2026 — hors puits de carbone"
+emissions_ges_totales,359,MtCO2e,2025,"Citepa, rapport Secten 2026 — baisse de 2.1 pct"
+emissions_par_habitant,5.2,tCO2e,2025,Citepa — contre 5.4 en 2024

@@ -1,0 +1,7 @@
+energie,facteur_co2,facteur_unite,accise_actuelle,accise_unite,prix_implicite_eur_par_t,carbone_a_100_eur_t,carbone_unite,source
+electricite,19.6,gCO2/kWh,31,EUR/MWh,1600,2,EUR/MWh,"Tarifs : CIBS / BOFiP. Facteur : RTE 2025"
+essence,2.28,kgCO2/L,0.68,EUR/L,300,0.23,EUR/L,"Tarifs : guide de la fiscalité des énergies. Facteur : ADEME Base Empreinte"
+gazole,2.64,kgCO2/L,0.60,EUR/L,227,0.26,EUR/L,"Tarifs : guide de la fiscalité des énergies. Facteur : ADEME Base Empreinte"
+gaz_naturel,0.202,kgCO2/kWh,16.5,EUR/MWh,82,20.2,EUR/MWh,"Tarifs : CIBS / BOFiP. Facteur : ADEME Base Empreinte"
+fioul_domestique,2.68,kgCO2/L,0.16,EUR/L,61,0.27,EUR/L,"Tarifs : CIBS / BOFiP. Facteur : ADEME Base Empreinte"
+kerosene_vols_interieurs,2.52,kgCO2/L,0,EUR/L,0,0.25,EUR/L,Exonération — code des impositions sur les biens et services

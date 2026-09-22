@@ -1,0 +1,13 @@
+annee,filiere,production_twh,part_pct,source
+2024,nucleaire,361.7,67.4,"RTE, Bilan électrique 2024"
+2024,hydraulique,74.7,13.9,"RTE, Bilan électrique 2024"
+2024,eolien,46.2,8.6,"RTE, Bilan électrique 2024"
+2024,solaire,24.3,4.5,"RTE, Bilan électrique 2024"
+2024,thermique_fossile,20.2,3.8,"RTE, Bilan électrique 2024"
+2024,bioenergies,9.4,1.8,"RTE, Bilan électrique 2024"
+2025,nucleaire,373.0,68.1,"RTE, Bilan électrique 2025"
+2025,hydraulique,62.4,11.4,"RTE, Bilan électrique 2025"
+2025,eolien,49.6,9.1,"RTE, Bilan électrique 2025 — 43.9 terrestre et 5.7 en mer"
+2025,solaire,32.9,6.0,"RTE, Bilan électrique 2025"
+2025,thermique_fossile,18.7,3.4,"RTE, Bilan électrique 2025 — 16.4 gaz, 1.7 fioul, 0.7 charbon"
+2025,bioenergies,10.9,2.0,"RTE, Bilan électrique 2025 — valeur qui ferme le total de 547.5 TWh ; une lecture a 9.9 TWh circule, incompatible avec ce total"

@@ -41,6 +41,13 @@ le croie. Ici :
 6. **Ce que le programme coûte est chiffré dans le programme**, pas renvoyé à
    plus tard : 29 Md€ de recettes publiques à retrouver, écrits en toutes
    lettres.
+7. **Les chiffres s'additionnent, et le dépôt le vérifie.** Chaque figure et
+   chaque calcul s'appuie sur un `.csv` versionné, et `verifier.py` refait les
+   additions à chaque modification : les filières font le total de l'année, les
+   parts font cent, les postes du chiffrage font les 29 Md€, le prix implicite
+   du carbone est bien le quotient de ses deux colonnes, le solde d'un ménage
+   bien la différence des deux précédentes. Un chiffre qui dérive fait échouer
+   la publication.
 
 ## Comment c'est fait
 
@@ -51,8 +58,9 @@ n'apprend qu'un visiteur l'a lu.
 
 ```
 pages/*.html          le corps de chaque page, et rien d'autre
+donnees/*.csv         les tables derrière les figures et les calculs
 scripts/construire.py le gabarit commun (en-tête, bandeau, pied) + l'assemblage
-scripts/verifier.py   liens, ancres, balises, ressources
+scripts/verifier.py   liens, ancres, balises, ressources, et l'arithmétique des données
 moteur/style.css      la charte, reprise telle quelle du dépôt frère
 moteur/energie.css    ce que l'énergie demande en plus
 *.html                les pages livrées — produites, et versionnées
@@ -77,7 +85,13 @@ met à jour quand on revérifie réellement les chiffres de la page, et à ce
 moment-là seulement** : une date de vérification fausse est pire que pas de date.
 
 **Pour ajouter une page**, on dépose le corps dans `pages/`, et on ajoute
-l'onglet dans `NAVIGATION`, en haut de `scripts/construire.py`.
+l'onglet dans `NAVIGATION`, en haut de `scripts/construire.py`. Une page qui ne
+doit pas figurer au bandeau porte `onglet: (aucun)`.
+
+**Pour modifier un chiffre affiché dans une figure ou un calcul**, on modifie
+d'abord la table de `donnees/`, puis la page. `verifier.py` refuse les deux si
+elles cessent de s'additionner ; c'est voulu, et c'est le seul garde-fou contre
+un tableau qu'une retouche de texte fait mentir.
 
 ## Publication
 
