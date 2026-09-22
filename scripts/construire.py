@@ -89,10 +89,7 @@ GABARIT = """<!doctype html>
   périmée ou fausse se signale <a href="{depot}/issues">par une issue</a> : elle
   sera corrigée ou la page portera la contestation.</p>
   <p>Textes et infographies sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a>,
-  code sous licence Apache 2.0, sur <a href="{depot}">GitHub</a>.
-  Le site ne dépose aucun cookie, ne mesure aucune audience et ne charge ni
-  police, ni script, ni image venus d'un tiers : personne n'apprend que vous
-  l'avez lu.</p>
+  code sous licence Apache 2.0, sur <a href="{depot}">GitHub</a>.</p>
   <p class="retour-site">Un site du <a href="{site_parent}">Parti libéral français</a>.</p>
 </footer>
 
